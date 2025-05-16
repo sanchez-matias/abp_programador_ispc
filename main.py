@@ -1,19 +1,21 @@
 
-def agregar_dispositivo():
-    pass
+"""
+{
+    "nombre": <string>,
+    "tipo": <int>,
+    "estado": <bool>
+}
+"""
 
-def listar_dispositivos():
-    pass
+dispositivos = [
+    {
+        "nombre": 'Nikonasd asda',
+        "tipo": 2,
+        "estado": False,
+    },
+]
 
-def buscar_dispositivo():
-    pass
-
-def eliminar_dispositivo():
-    pass
-
-dispositivos = {}
-
-def menu():
+if __name__ == '__main__':
     while True:
         print("\n--- MENÚ PRINCIPAL ---")
         print("1. Agregar dispositivo")
