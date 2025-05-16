@@ -13,6 +13,21 @@ dispositivos = [
         "tipo": 2,
         "estado": False,
     },
+    {
+        "nombre": "Cámara Nikon D3500",
+        "tipo": 1,  # 1 para cámaras
+        "estado": False,
+    },
+    {
+        "nombre": "Luz LED Neewer 660",
+        "tipo": 2,  # 2 para luces
+        "estado": False,
+    },
+    {
+        "nombre": "Altavoz JBL PartyBox 310",
+        "tipo": 3,  # 3 para equipos de música
+        "estado": False,
+    },
 ]
 
 if __name__ == '__main__':
