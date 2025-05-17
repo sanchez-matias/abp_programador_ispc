@@ -1,4 +1,5 @@
 import dispositivos
+import automatizaciones
 
 """
 {
@@ -22,7 +23,9 @@ if __name__ == '__main__':
         print("4. Eliminar dispositivo")
         print("5. Activar Modo Fiesta")
         print("6. Activar Modo Noche")
-        print("7. Salir")
+        print("7. Apagar Modo Fiesta")
+        print("8. Apagar Modo Noche")
+        print("9. Salir")
         opcion = input("Seleccione una de las opciones: ")
         print ("-------------------------------------------")
 
@@ -51,10 +54,14 @@ if __name__ == '__main__':
             print(dispositivos.eliminar_dispositivo(dispositivo, confirmar, lista_dispositivos))
 
         elif opcion == "5":
-            activar_modo_fiesta(dispositivos)
+            automatizaciones.activar_modo_fiesta
         elif opcion == "6":
-            activar_modo_noche(dispositivos)
+            automatizaciones.activar_modo_noche
         elif opcion == "7":
+            automatizaciones.apagar_modo_fiesta
+        elif opcion == "8":
+            automatizaciones.apagar_modo_noche    
+        elif opcion == "9":
             print("Saliendo del sistema...")
             break
         else:
