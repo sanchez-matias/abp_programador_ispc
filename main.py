@@ -1,3 +1,4 @@
+import dispositivos
 
 """
 {
@@ -7,17 +8,14 @@
 }
 """
 
-dispositivos = [
-    {
-        "nombre": 'Nikonasd asda',
-        "tipo": 2,
-        "estado": False,
-    },
+lista_dispositivos = [
+    {"nombre": 'Aire Acondicionado', "tipo": 2, "estado": False},
+    {"nombre": 'Luces Cocina', "tipo": 1, "estado": True},
 ]
 
 if __name__ == '__main__':
     while True:
-        print("\n--- MENÚ PRINCIPAL ---")
+        print("--- MENU PRINCIPAL ---")
         print("1. Agregar dispositivo")
         print("2. Listar dispositivos")
         print("3. Buscar dispositivo")
@@ -25,16 +23,33 @@ if __name__ == '__main__':
         print("5. Activar Modo Fiesta")
         print("6. Activar Modo Noche")
         print("7. Salir")
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione una de las opciones: ")
+        print ("-------------------------------------------")
 
         if opcion == "1":
-            agregar_dispositivo()
+            nombre = input("Nombre del nuevo dispositivo: ")
+            tipo = int(input("Tipo (numero 1, 2, 3): "))
+            estado = input("¿Está activo? (si/no): ")
+            if dispositivos.agregar_dispositivo(lista_dispositivos, nombre, tipo, estado):
+                print("El dispositivo ingresado se registro con exito.")
+            else:
+                print("Ya existe un dispositivo con ese nombre. Vuelva a intentarlo con otro")
+
         elif opcion == "2":
-            listar_dispositivos()
+            dispositivos.listar_dispositivos(lista_dispositivos)
+
         elif opcion == "3":
-            buscar_dispositivo()
+            nombre = input("Ingrese el nombre del dispositivo a buscar: ")
+            if dispositivos.buscar_por_nombre(nombre, lista_dispositivos):
+                print(f"El dispositivo ingresado como '{nombre}' si existe.")
+            else:
+                print(f"No existe ningun dispositivo llamado '{nombre}'.")
+
         elif opcion == "4":
-            eliminar_dispositivo()
+            dispositivo = input("Ingrese el dispositivo que quiere eliminar: ")
+            confirmar = input(f"¿Esta seguro que desea eliminar el dispositivo '{dispositivo}'? (si/no): ")
+            print(dispositivos.eliminar_dispositivo(dispositivo, confirmar, lista_dispositivos))
+
         elif opcion == "5":
             activar_modo_fiesta(dispositivos)
         elif opcion == "6":

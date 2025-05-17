@@ -32,4 +32,4 @@ def eliminar_dispositivo(nombre, confirmar, lista_dispositivos):
 
 def listar_dispositivos(dispositivos: list):
     for i in range(len(dispositivos)):
-        print(f'${i}) d{dispositivos[i]["nombre"]}')
+        print(f'{i}) {dispositivos[i]["nombre"]}')
