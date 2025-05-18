@@ -10,10 +10,10 @@ import automatizaciones
 """
 
 lista_dispositivos = [
-    {"nombre": 'Luces', "tipo": 2, "estado": False},
+    {"nombre": 'Luces', "tipo": 2, "estado": True},
     {"nombre": 'Camara seguridad', "tipo": 1, "estado": False},
-    {"nombre": 'Equipo musica', "tipo": 3, "estado": False},
-    {"nombre": 'Luces 2', "tipo": 2, "estado": False}
+    {"nombre": 'Equipo musica', "tipo": 3, "estado": True},
+    {"nombre": 'Luces 2', "tipo": 2, "estado": True}
 ]
 
 def imprimirEstado():
@@ -28,7 +28,7 @@ if __name__ == '__main__':
         print("3. Buscar dispositivo")
         print("4. Eliminar dispositivo")
         print("5. Modificar Modo Fiesta")
-        print("6. Activar Modo Noche")
+        print("6. Modificar Modo Noche")
         print("7. Salir")
         opcion = input("Seleccione una de las opciones: ")
         print ("-------------------------------------------")
@@ -66,7 +66,13 @@ if __name__ == '__main__':
             else:
                 print("opcion no validad")        
         elif opcion == "6":
-            automatizaciones.activar_modo_noche 
+            accion = int(input("Ingrese 1 para encender el modo noche y 2 para apagarlo: "))
+            if accion == 1:
+                print(automatizaciones.activar_modo_noche(lista_dispositivos))
+            elif accion == 2:
+                print(automatizaciones.apagar_modo_noche(lista_dispositivos))
+            else:
+                print("opcion no validad")
         elif opcion == "7":
             print("Saliendo del sistema...")
             break
