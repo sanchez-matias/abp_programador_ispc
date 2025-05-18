@@ -48,9 +48,7 @@ Al ejecutar el programa (main.py), se accede a un menú de consola:
 4. Eliminar dispositivo
 5. Activar Modo Fiesta
 6. Activar Modo Noche
-7. Apagar  Modo Fiesta
-8. Apagar  Modo Noche
-9. Salir
+7. Salir
 
 
 
