@@ -110,10 +110,23 @@ abp_programador_ispc/
   GitHub, VS Code, Discord, WhatsApp.
 
 - **Organización y roles asignados:**  
-  - Programación principal: Ignacio y Emiliano  
-  - Automatizaciones: Kevin  
-  - Documentación y funciones base: Matías  
-  - Validación y pruebas: Genaro
+Desde el inicio del proyecto, se optó por una metodología de trabajo colaborativa, donde todos los miembros participaron de manera activa en distintas áreas del desarrollo. La asignación de tareas fue flexible, basada en las fortalezas individuales y en la disponibilidad de cada integrante. Las decisiones clave se tomaban en conjunto, especialmente durante las reuniones por Discord, donde cada uno compartía sus avances y recibía retroalimentación del grupo.
+A continuación, se detalla la participación específica de cada integrante:
+
+- Fausto Santino FILI: Contribuyó en la elaboración del Diagrama Entidad-Relación (DER) y fue responsable del desarrollo del apartado de ética dentro del proyecto, además estuvo presente en las llamadas grupales aportando ideas de cómo podrían desarrollar algunas funciones los compañeros de Equipo.
+
+- Matías Emanuel SANCHEZ: Se encargó de implementar la mayoría de las funciones relacionadas con la gestión de dispositivos. Además, trabajó en el desarrollo del inicio del menú principal en el módulo main.py y realizó aportes al archivo README.md del repositorio.
+
+- Kevin Agustín REQUELME: Tuvo a su cargo la implementación y funcionamiento de las opciones del menú desde la opción 1 hasta la opción 4 inclusive. También desarrolló la función eliminar_dispositivo del archivo dispositivos.py y diseño el Diagrama Entidad-Relación según lo establecido en el Grupo.
+
+- Genaro CURA: Fue el principal responsable del documento técnico sobre la base de datos. Asimismo, trabajó de manera conjunta en la función de automatización modo_noche, mostrando una destacada capacidad de colaboración técnica.
+
+
+Ignacio MOREIRA: Realizó la redacción completa del archivo README.md, habilitó la opción 6 del menú en main.py y contribuyó activamente, junto con Genaro, en la creación de la función de automatización modo_noche.
+
+- Emiliano Gabriel Esteban DIAZ: Habilitó la opción 5 del menú y fue responsable de la función de automatización modo_fiesta. También realizó aportes importantes en el diseño y funcionamiento del menú general.
+
+La participación activa y equilibrada de todos los integrantes garantizó un avance sostenido del proyecto, promoviendo un entorno de respeto y apoyo mutuo.
 
 - **División del trabajo:**  
   El proyecto se dividió en tres módulos principales:  
