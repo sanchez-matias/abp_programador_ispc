@@ -18,10 +18,10 @@ def activar_modo_noche(dispositivos):
             dispositivo["estado"] = False
         if dispositivo["tipo"] == 1 and dispositivo["estado"] == False:
             dispositivo["estado"] = True
-    return "Modo Fiesta activado: luces y equipos de música encendidos."
+    return "Modo Noche activado: luces y equipos de música apagados, cámaras encendidas."
 
 def apagar_modo_noche(dispositivos):
     for dispositivo in dispositivos:
         if dispositivo["tipo"] == 1 and dispositivo["estado"] == True:
             dispositivo["estado"] = False
-    return "Modo Fiesta activado: luces y equipos de música encendidos."             
+    return "Modo Noche desactivado: cámaras apagadas."             
