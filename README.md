@@ -109,12 +109,6 @@ abp_programador_ispc/
 - **Herramientas utilizadas:**  
   GitHub, VS Code, Discord, WhatsApp.
 
-- **Organización y roles asignados:**  
-  - Programación principal: Ignacio y Emiliano  
-  - Automatizaciones: Kevin  
-  - Documentación y funciones base: Matías  
-  - Validación y pruebas: Genaro
-
 - **División del trabajo:**  
   El proyecto se dividió en tres módulos principales:  
   1. Gestión de dispositivos  
