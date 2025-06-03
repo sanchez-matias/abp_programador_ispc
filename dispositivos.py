@@ -27,9 +27,10 @@ def eliminar_dispositivo(nombre, confirmar, lista_dispositivos):
                 return "Operación cancelada..."
             else:
                 return "Error: Solamente escriba 'si' o 'no'."
-    return f"No se encontr ningun dispositivo llamado '{nombre}'."
+    return f"No se encontro ningun dispositivo llamado '{nombre}'."
 
-
-def listar_dispositivos(dispositivos: list):
-    for i in range(len(dispositivos)):
-        print(f'{i}) {dispositivos[i]["nombre"]}')
+def listar_dispositivos(lista_dispositivos: list):
+    if not lista_dispositivos:
+        return "No hay dispositivos registrados."
+    for disp in lista_dispositivos:
+        print(f"- {disp['nombre']} (Tipo: {disp['tipo']}) - {'Estado: On' if disp['estado'] else 'Estado: Off'}")
